@@ -1,6 +1,6 @@
 main {
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     display: block
 }
 
@@ -9,7 +9,7 @@ main a {
 }
 
 main h2[class^=common-Uppercase] {
-    color: #C52F41
+    color: #c33c41
 }
 
 
@@ -124,7 +124,7 @@ main header {
 #intro li:first-child a {
     margin-right: 23px;
     color: #fff;
-    background: #C52F41;
+    background: #c33c41;
     text-shadow: 0 1px 3px rgba(27, 31, 29, 0.4)
 }
 
@@ -142,3 +142,27 @@ main header {
         color: #282828;
     }
 }
+
+
+/* 
+#stars-background {
+    height: 20%;
+    transform: skewY(-7deg);
+
+}
+#intro{
+    display: none;
+}
+#info-section{
+    padding: 20%;
+    color: #222;
+}
+
+#info-section h1 {
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+
+} */

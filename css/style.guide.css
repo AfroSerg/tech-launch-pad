@@ -71,12 +71,19 @@ body {
     max-width: 1160px
 }
 
+.body-title{
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+}
 
 .body-text {
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
-    color: #6b7c93
+    color: #222;
 }
 
 
@@ -526,7 +533,7 @@ body {
 
 .global-navigation .nav-section.secondary {
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 0
 }
 
