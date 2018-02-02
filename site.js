@@ -35,6 +35,7 @@ function optBlockClick(){
 
 function moreInfoClick(){
 	toggleActive('.-square')
+	toggleActive('#cover')
 }
 
 attach('.-block', 'click', optBlockClick)
