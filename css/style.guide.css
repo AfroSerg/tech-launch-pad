@@ -523,9 +523,6 @@ body {
     left: 0
 }
 
-.global-navigation .nav-section.primary,.global-navigation .nav-section.secondary {
-    display: none
-}
 
 @media (min-width: 670px) {
     .global-navigation .nav-section.primary,.global-navigation .nav-section.secondary {
@@ -690,4 +687,8 @@ body {
     .utility-button-group a {
         float: right;
     }
+  }
+
+  a{
+      cursor: pointer;
   }
