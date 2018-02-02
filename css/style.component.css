@@ -41,11 +41,35 @@ main header {
       rgba(33, 59, 109, 0.55)
     ), url('../img/stars.png'); */
     background: #282828;
+    transition: all 300ms ease-in-out;
 }
 
 #intro {
-    position: relative
+    position: relative;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
 }
+
+#intro .info-link{
+    
+    padding-top: 10px;
+    font-size: 1.2em;
+    display: block;
+    color: #fff;
+}
+#intro .info-link::after{
+    font: normal 16px StripeIcons;
+    content: '\279E';
+    padding-left: 1px;
+    padding-top: 4px;
+}
+
+#intro .info-link:hover{
+    
+    color: rgb(121, 121, 121);
+    transition: all 300ms ease-in-out;
+}
+
 
 @media (min-width: 670px) {
     #intro {
@@ -54,6 +78,10 @@ main header {
         -ms-flex-align: center;
         align-items: center;
         height: 600px
+    }
+
+    #intro .info-link{
+        display: none;
     }
 }
 
@@ -101,6 +129,7 @@ main header {
     #intro p {
         max-width:60%
     }
+    
 }
 
 @media (min-width: 880px) {
@@ -143,17 +172,8 @@ main header {
     }
 }
 
-
-/* 
-#stars-background {
-    height: 20%;
-    transform: skewY(-7deg);
-
-}
-#intro{
-    display: none;
-}
 #info-section{
+    display: none;
     padding: 20%;
     color: #222;
 }
@@ -165,4 +185,43 @@ main header {
     font-size: 32px;
     font-weight: 700;
 
-} */
+} 
+
+
+.global-content.info-active #stars-background {
+    height: 20%;
+    transform: skewY(-7deg);
+    transition: all 300ms ease-in-out;
+}
+.global-content.info-active #intro{
+    opacity: 0;
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+.global-content.info-active #info-section{
+    display: block;
+}
+
+@media (min-width: 670px) {
+    .global-content.info-active #stars-background {
+        height: 23%;
+        transform: skewY(-7deg);
+        transition: all 300ms ease-in-out;
+    } 
+}
+
+@media (min-width: 880px){
+    .global-content.info-active #stars-background {
+        height: 25%;
+        transform: skewY(-7deg);
+        transition: all 300ms ease-in-out;
+    } 
+}
+
+@media (min-width: 1040px){
+    .global-content.info-active #stars-background {
+        height: 30%;
+        transform: skewY(-7deg);
+        transition: all 300ms ease-in-out;
+    } 
+}
