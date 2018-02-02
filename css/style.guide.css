@@ -52,9 +52,10 @@ body {
     font-variant-numeric: proportional-nums
 }
 
-.globalContent {
+.global-content {
     -ms-flex-positive: 1;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative;
 }
 
 .container,.container-fluid,.container-lg,.container-wide,.container-xl {
@@ -626,3 +627,51 @@ body {
     content: '\279E';
     padding-left: 1px
 }
+
+
+.global-footer {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    position: relative;
+  }
+  
+  .register-stuff {
+    padding: 50px 0;
+    border-bottom: 2px solid rgba(207,215,223,.25)
+  }
+  
+  @media (min-width: 670px) {
+    .register-stuff .container-lg {
+        display:-ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center
+    }
+  }
+  
+  .register-stuff .buttons,.register-stuff .content {
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%
+  }
+  
+  .register-stuff .title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #282828;
+    margin: .75em 0
+  }
+  
+  .register-stuff .subtitle {
+    font-weight: 300;
+    color: #c33c41;
+    display: block
+  }
+  
+  @media (min-width: 670px) {
+    .register-stuff .utility-button-group {
+        -ms-flex-pack:end;
+        justify-content: flex-end
+    }
+  }
