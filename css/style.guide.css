@@ -634,7 +634,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #fff;
     position: relative;
-  }
+}
+
+.global-footer>*{
+    pointer-events: auto;
+    position: relative;
+}
+
+.global-footer .utility-button{
+    margin-right: 23px;
+    color: #fff;
+    background: #c33c41;
+    text-shadow: 0 1px 3px rgba(27, 31, 29, 0.4);
+}
   
   .register-stuff {
     padding: 50px 0;
@@ -673,5 +685,9 @@ body {
     .register-stuff .utility-button-group {
         -ms-flex-pack:end;
         justify-content: flex-end
+        
+    }
+    .utility-button-group a {
+        float: right;
     }
   }

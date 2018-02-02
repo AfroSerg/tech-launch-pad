@@ -26,6 +26,11 @@ main header {
     height: 100vh;
 }
 
+.info-active main header{
+    height: 120px;
+    transition: all 500ms ease-in-out;
+}
+
 
 #stars-background {
     position: absolute;
@@ -177,7 +182,6 @@ main header {
     opacity: 0;
     color: #282828;
     transition: all 1500ms ease-in-out;
-    padding-top: 120px;
 }
 
 #info-section h1 {
@@ -199,7 +203,9 @@ iframe{
 }
 
 .schedule{
-    background: #2828280a
+    background: #2828280a;
+    padding: 10px;
+    padding-bottom: 20px;
 }
   .schedule #schedule-top h2.main-title {
     margin-bottom: 0;
