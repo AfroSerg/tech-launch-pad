@@ -6,96 +6,34 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tech Launch Pad</title>
 	<link rel="stylesheet" href="./tachyons.min.css">
-	<style>
-		body{
-			background: #222;
-			color: #eee;
-		}
-
-
-		html{
-			font-family: sans-serif;
-			box-sizing: border-box;
-		}
-
-		*, *:before, *:after {
-			box-sizing: inherit;
-			font-family: inherit;
-		}
-		.-btn{
-			display: inline-block;
-
-			padding: 10px;
-			margin:10px;
-		}
-
-		#menuBlocks{
-			--col-width: 350px;
-			--col-height: 280px;
-		}
-		.-block-col{
-			/* resize on screen */
-			display: inline-block;
-			position: relative;
-			margin: 0 -2px;
-			width: var(--col-width);
-		}
-
-		.-block-col:nth-child(even){
-			top: -20px;
-		}
-		.-block{
-			/* resize on screen */
-			background: lightseagreen;	
-			float: left;
-			padding: 10px;
-			height: var(--col-height);
-			width: var(--col-width);
-
-			border: 1px solid black;
-		}
-
-		.-view{
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			
-			background: lightcoral;
-		}
-
-		.-view.-active{
-			display: initial;
-		}
-
-		
-	</style>
+	<link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="-thm">
 	<!-- cover page -->
 	<div id="cover" class="fixed absolute--fill tc">
-		<img class="mt6 mb5"
+		<img class="mt6 mb5 relative z-1"
 			width="250" height="250"
 			src="./img/logo-final.png" alt="">
 
-		<div class="tc f3">
-			<span>Release your inner tycoon.</span>
+		<div class="tc f3 relative z-1 fw1">
+			<span class="-cover-text">Release your inner tycoon.</span>
 			<!-- <br/> -->
 			<!-- <span>Tech Launch Pad</span> -->
 		</div>
 		<!-- TODO make those 3 blocks at the right bottom -->
-		<!-- <div class="absolute bottom-0 right-0"></div> -->
+		<div class="-square -square-1"></div>
+		<div class="-square -square-2"></div>
+		<div class="-square -square-3"></div>
 
-		<div class="absolute bottom-0 tc w-100 pa5">
-			<button class="-btn">Register</button>
-			<button class="-btn">More Info</button>
+
+		<div class="absolute bottom-0 tc w-100 pa5  z-1 f7">
+			<button class="-btn -bg-red -hover-bg-red-highlight">Register</button>
+			<button class="-btn -hover-red hover-bg-white">More Info</button>
 		</div>
 	</div>
 
 	<!-- main layout -->
-	<div id="main" class="fixed absolute--fill pa4 bg-white black">
+	<div id="main" class="fixed absolute--fill pa4 bg-white black dn">
 		<img class="fl"
 			id="main-logo"
 			width="40" height="40"
@@ -137,32 +75,108 @@
 	</div>
 
 	<div data-id="1" class="-view">
-
+		<div class="-opt-title">
+			Partners
+		</div>
+		<div class="-col-50">
+			You
+		</div>
+		<div class="-col-50">
+			<div class="partner">Student Techies</div>
+			<div class="partner">Informatics Mad Lab</div>
+			<div class="partner">GIBS Business School</div>
+		</div>
 	</div>
 
 	<div data-id="2" class="-view">
-		<div class="-sub-view">
-			<div class="-opt-title">
-				Discover Entrepreneurs
+
+		<div class="-opt-title">
+			The Title
+			<div class="-progress fr">
+				<span class="-active">1</span>
+				<span>2</span>
+				<span>3</span>
 			</div>
-			<div class="-opt-subtitle">
-				
+		</div>
+
+		<!-- pretty self explanatory -->
+		<div class="-sub-view-container">
+
+			<!-- discover entrepreneurs subview -->
+			<div data-id="0" class="-sub-view">
+				<div class="-opt-subtitle">
+					
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
 			</div>
-			<p class="fl w-50 db pa4">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
-			</p>
+
+			<!-- develop prototypes subview -->
+			<div data-id="0" class="-sub-view">
+				<div class="-opt-subtitle">
+					
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
+			</div>
 			
-			<p class="fl w-50 db pa4">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
-			</p>
+			<!-- business development subview -->
+			<div data-id="0" class="-sub-view">
+				<div class="-opt-subtitle">
+					
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
+				<div class="-col-50 w-50 fl">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores, dolorem sapiente mollitia voluptatibus aperiam, minima aliquam sequi, voluptates eaque unde maiores cum? Iste excepturi animi est laborum? Atque, labore.Adipisci praesentium rem, aut veniam, veritatis repudiandae fuga, nobis doloribus dignissimos in asperiores culpa eveniet. Nulla debitis earum eius inventore alias deleniti mollitia distinctio suscipit et ullam? In, commodi odio?
+					</p>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="-ctrls tc">
+			<span id="btnPrev">Prev</span>
+			<span id="btnNext">Next</spa>
 		</div>
 	</div>
 
 	<div data-id="3" class="-view">
-		View Four
+		<div class="-opt-title">
+			Contact Us
+		</div>
+		<div>
+			012 456 7890
+			info@gmail.com
+			something someting
+		</div>
 	</div>
 	<button id="btnClose" class="dn fixed bottom-2 right-2">Close</button>
 
 	<script src="./site.js"></script>
+	<script>
+		// currently working on 2
+		// activateOptionView(1)
+	</script>
 </body>
 </html>

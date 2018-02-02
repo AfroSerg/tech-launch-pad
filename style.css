@@ -1,0 +1,148 @@
+body{
+	background: #222;
+	color: #eee;
+}
+
+
+html{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: inherit;
+}
+
+.-thm{
+	--red: #cc5258;
+	--red-highlight: #bc383d;
+}
+.-btn{
+	display: inline-block;
+    padding: 16px 48px;
+    margin: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.-hover-red:hover{color: var(--red);}
+.-hover-bg-red:hover{background: var(--red);}
+.-hover-b-red:hover{border-color: var(--red);}
+.-red{color: var(--red);}
+.-bg-red{background: var(--red);}
+.-b-red{border-color: var(--red);}
+.-hover-bg-red-highlight:hover{background: var(--red-highlight);}
+
+#cover{
+    background: url('./img/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+	left: 50%;
+	z-index: 0;
+}
+
+.-cover-text{
+    color: #fff;
+	text-shadow: rgba(0,0,0,0.7) 1px 2px 6px;
+}
+
+.-square{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: 3px solid transparent;
+}
+
+.-square-1{
+	width: 100px;
+	height: 100px;	
+	border-color: blueviolet;
+}
+
+.-square-2{
+	width: 80px;
+	height: 80px;	
+	border-color: lightseagreen;
+}
+
+.-square-3{
+	width: 40px;
+	height: 40px;	
+	border-color: lightsalmon;
+}
+
+#menuBlocks{
+	--col-width: 350px;
+	--col-height: 280px;
+}
+.-block-col{
+	/* resize on screen */
+	display: inline-block;
+	position: relative;
+	margin: 0 -2px;
+	width: var(--col-width);
+}
+
+.-block-col:nth-child(even){
+	top: -20px;
+}
+.-block{
+	/* resize on screen */
+	background: lightseagreen;	
+	float: left;
+	padding: 10px;
+	height: var(--col-height);
+	width: var(--col-width);
+
+	border: 1px solid black;
+}
+
+.-view{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	background: lightcoral;
+}
+
+.-view.-active{
+	display: initial;
+}
+
+.-view{
+	--title-height: 200px;
+
+}
+
+.-opt-title{
+	height: var(--title-height);
+}
+.-sub-view-container{
+	position: relative;
+	height: var(--title-height);
+	width: 100vw;
+}
+
+.-sub-view{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+}	
