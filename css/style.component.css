@@ -46,13 +46,13 @@ main header {
       rgba(33, 59, 109, 0.55)
     ), url('../img/stars.png'); */
     background: #282828;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 #intro {
     position: relative;
     opacity: 1;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 #intro .info-link{
@@ -72,7 +72,7 @@ main header {
 #intro .info-link:hover{
     
     color: rgb(121, 121, 121);
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 
@@ -181,7 +181,7 @@ main header {
     display: none;
     opacity: 0;
     color: #282828;
-    transition: all 1500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 #info-section h1 {
@@ -206,11 +206,30 @@ main header {
     list-style-type: circle;
     padding-top: 20px;
     padding-left: 20px;
-    font-size: 15px;
     font-weight: 400;
-
+    font-size: 17px;
+    line-height: 26px;
+    color: #222;
 }
 
+#info-section .participate-content span{
+    display: block;
+    font-weight: 100;
+    font-size: 11px;
+    text-decoration-style: dashed;
+    width: 100%;
+    float: left;
+    padding-top:4px;
+}
+
+#info-section .process-content{
+    padding: 40px 0 0 0;
+}
+
+.youtube-vid{
+    width: 100%;
+    height: 600px;
+}
 
 iframe{
     display: block;
@@ -353,18 +372,18 @@ iframe{
 .global-content.info-active #stars-background {
     height: 100px;
     transform: skewY(0deg);
-    transition: all 300ms ease-in-out;
+    transition: transform 400ms ease-in-out, height 500ms ease-in-out;
 }
 .global-content.info-active #intro{
     
     display: none;
     opacity: 0;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .global-content.info-active #info-section{
     display: block;
     opacity: 1;
-    transition: all 1500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .global-footer{
@@ -373,4 +392,29 @@ iframe{
 
 .global-footer.info-active{
     display: block;
+}
+
+#entities-involved ul{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: right;
+    align-items: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 0;
+}
+
+#entities-involved li{
+    float: right;
+    margin: 10px;
+    filter: grayscale();
+}
+
+#entities-involved img{
+    height: 60px;
+    vertical-align: middle;
 }
