@@ -62,7 +62,7 @@ html{
 		0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform;
     transform: translateY(10%);
     opacity: 0;
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 #cover.-active{
@@ -107,7 +107,7 @@ html{
 }
 
 .-square-1.-active{
-	border-width: 70vw;
+	border-width: 72vw;
 }
 
 #menuBlocks{
