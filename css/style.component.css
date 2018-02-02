@@ -198,25 +198,6 @@ iframe{
     background: #282828;
 }
 
-
-.global-content.info-active #stars-background {
-    height: 100px;
-    transform: skewY(0deg);
-    transition: all 300ms ease-in-out;
-}
-.global-content.info-active #intro{
-    
-    display: none;
-    opacity: 0;
-    transition: all 300ms ease-in-out;
-}
-.global-content.info-active #info-section{
-    display: block;
-    opacity: 1;
-    transition: all 1500ms ease-in-out;
-}
-
-
 .schedule{
     background: #2828280a
 }
@@ -338,3 +319,29 @@ iframe{
       margin: 0 1px;
     }
   }
+
+
+.global-content.info-active #stars-background {
+    height: 100px;
+    transform: skewY(0deg);
+    transition: all 300ms ease-in-out;
+}
+.global-content.info-active #intro{
+    
+    display: none;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.global-content.info-active #info-section{
+    display: block;
+    opacity: 1;
+    transition: all 1500ms ease-in-out;
+}
+
+.global-footer{
+    display: none;
+}
+
+.global-footer.info-active{
+    display: block;
+}
