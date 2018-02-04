@@ -22,7 +22,9 @@ const toggleActive = q =>
 function toggleCover(){
 	toggleActive('#scrollable')
 	toggleActive('#cover')
+	toggleActive('#roadmap')
+	toggleActive('.-nav-bar')
 }
 
 attach('#moreInfo', 'click', toggleCover)
-attach('#lessInfo', 'click', toggleCover)
+attach('.-nav-brand, .-nav-title', 'click', toggleCover)
