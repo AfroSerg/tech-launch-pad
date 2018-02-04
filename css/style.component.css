@@ -107,14 +107,14 @@ main header {
 
 @media (min-width: 670px) {
     #intro .container-lg {
-        margin-top:-7%;
+        margin-top:-15%;
         padding-top: 0;
         padding-bottom: 0
     }
 }
 
 #intro h1 {
-    padding-top: 30px;
+    padding-top: 80px;
     font-size: 32px;
     font-weight: 700;
     color: #fff
@@ -193,7 +193,7 @@ main header {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 300;
 
 }
 
@@ -237,12 +237,15 @@ iframe{
     margin-bottom: 0;
     text-align: center;
     font-weight: 700;
+    font-size: 2.5em;
   }
   .schedule #schedule-top .sub-title {
     padding-bottom: 0;
     margin-top: 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
   }
   .schedule #page-bg--top {
     top: 0;
@@ -282,6 +285,8 @@ iframe{
   .schedule #schedule-times .schedule-item h4 {
     float: left;
     font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
   }
   .schedule #schedule-times .schedule-item h2.skew {
     float: right;
