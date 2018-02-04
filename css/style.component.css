@@ -17,6 +17,10 @@ main h2[class^=common-Uppercase] {
     color: hsla(0,0%,100%,.5)
 }
 
+.nav-section.secondary>.item-home{
+    display: none;
+}
+
 main header {
     position: relative
 }
@@ -193,38 +197,19 @@ main header {
 
 }
 
-#info-section .about-content , #info-section .participate-content, #info-section .process-content{
+#info-section .content-box{
     padding: 20px 0;
 }
 
-#info-section .about-content>h3 , #info-section .participate-content>h3, #info-section .process-content>h3{
+#info-section .content-box>h3{
     font-size: 20px;
-}
-
-#info-section .participate-content ul{
-    display: block;
-    list-style-type: circle;
-    padding-top: 20px;
-    padding-left: 20px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
-    color: #222;
-}
-
-#info-section .participate-content span{
-    display: block;
-    font-weight: 100;
-    font-size: 11px;
-    text-decoration-style: dashed;
-    width: 100%;
-    float: left;
-    padding-top:4px;
+    padding-bottom: 5px;
 }
 
 #info-section .process-content{
     padding: 40px 0 0 0;
 }
+
 
 .youtube-vid{
     width: 100%;
@@ -242,7 +227,7 @@ iframe{
 }
 
 .schedule{
-    background: #2828280a;
+    background: #fff;
     padding: 10px;
     padding-bottom: 20px;
     box-shadow: 0 5px 11.5px rgba(40, 40, 40, 0.521), 0 1.5px 5px rgba(0, 0, 0, 0.212);
@@ -415,6 +400,13 @@ iframe{
 }
 
 #entities-involved img{
-    height: 100px;
+    height: 60px;
     vertical-align: middle;
+}
+
+@media (min-width: 670px){
+    #entities-involved img{
+        height: 100px;
+        vertical-align: middle;
+    }
 }
