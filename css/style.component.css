@@ -234,9 +234,20 @@ iframe{
     box-shadow: 0 5px 11.5px rgba(40, 40, 40, 0.521), 0 1.5px 5px rgba(0, 0, 0, 0.212);
     margin: 20px 0;
 }
+
+.tabs-intro{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: HelveticaNeueLT;
+    font-size: 32px;
+    font-weight: 300;
+
+}
   .schedule #schedule-top h2.main-title {
     margin-bottom: 0;
     text-align: left;
+    font-family: HelveticaNeueLT;
     font-weight: 700;
     font-size: 2.5em;
   }
