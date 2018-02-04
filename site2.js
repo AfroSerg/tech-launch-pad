@@ -19,20 +19,10 @@ const toggleActive = q =>
 	a(q).forEach(el => el.classList.toggle('-active'))
 
 
-function onMoreInfoClick(){
+function toggleCover(){
+	toggleActive('#scrollable')
 	toggleActive('#cover')
-	toggleActive('#rightCover')
-	const cover = f('#cover')
-	const moreInfo = f('#moreInfo')
-	cover.classList.toggle('-slide-left')
-	if(cover.classList.contains('-active')){
-		moreInfo.innerHTML = 
-			'More Info <span class="mdi mdi-arrow-right"></span>'
-	} else {
-		moreInfo.innerHTML = 
-			'<span class="mdi mdi-arrow-left"></span>  Less Info'
-	}
-
 }
 
-attach('#moreInfo', 'click', onMoreInfoClick)
+attach('#moreInfo', 'click', toggleCover)
+attach('#lessInfo', 'click', toggleCover)

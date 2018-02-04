@@ -20,7 +20,6 @@ body{
 .-active.-fade-in, .-active > .-fade-in{
 	opacity: 1;
 	transform: translateY(0%);
-	transition: 0.2s ease all;
 }
 
 .-fade-out{
@@ -30,7 +29,6 @@ body{
 .-fade-out.-active, .-active > .-fade-out{
 	opacity: 1;
 	transform: translateY(0%);
-	transition: 0.2s ease all;
 }
 
 .-trans-02{
@@ -43,14 +41,19 @@ body{
 	transition: 
 		0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) opacity,
 		0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform;
-	/* transition-delay: 0.2s; */
+	transition-delay: 0.2s;
 }
 
-.-fade-trans-delay{
+.-trans-02-03{
 	transition: 
 		0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) opacity,
 		0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform;
 	transition-delay: 0.3s;
+}
+
+.-fade-trans{
+	transition: 0.2s ease opacity,
+		 		0.2s ease transform;
 }
 
 .-slide-left{
@@ -125,12 +128,13 @@ body{
 	text-shadow: #111 1px 1px;
 }
 .-section{
-	height: 100vh;
+	height: calc(100vh - 70px);
 }
 
 #cover{
 	position: fixed;
-	width:100%;
+	width:100vw;
+	height: 100vh;
 	top:0;
 	left:0;
 	/* pointer-events: none; */
@@ -167,13 +171,11 @@ body{
 	color: #222;
 }
 
-.-scrollable{
-	opacity: 0;
-	height: 0vh;
-	overflow: hidden;
+#scrollable{
+	transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform;
+	transform: translateX(100%);
 }
 
-
-.-scrollable.-active{
-	overflow: initial;
+#scrollable.-active{
+	transform: translateX(0%);
 }
