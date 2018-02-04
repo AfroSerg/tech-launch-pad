@@ -152,6 +152,30 @@ body{
 	width: calc(100% / 3);
 }
 
+.-col-30{
+	float: left;
+	width: 30%;
+}
+
+.-col-70{
+	float: left;
+	width: 70%;
+}
+
+.-col-40{
+	float: left;
+	width:  40%;
+	max-width: 240px;
+	overflow: hidden;
+}
+
+.-col-60{
+	float: left;
+	width: 60%;
+	max-width: 400px;
+	overflow: hidden;
+}
+
 .-bg{
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -330,10 +354,75 @@ body{
 
 #schedule{
 	background: #f7f7f7;
+	padding-top: 10px;
+	padding-bottom: 50px;
 }
 
 .-title-icon{
     position: relative;
     top: 18px;
-    width: 64px;
+	width: 64px;
+	margin-right: 10px;
+}
+
+.-nav-register{
+	border: 2px solid black;
+    background: #fff;
+    padding: 10px;
+}
+
+.-sched-container{
+	height: 200px;
+	background: red;
+	width: 70%;
+	max-width: 640px;
+	margin: auto;
+	display: none;
+}
+
+.-sched-container.-active{
+	display: initial;
+}
+.-sched-bar{
+	width: 3px;
+	height: 150px;
+	margin-left: 20px;
+	background: var(--red);
+}
+
+.-sched-time > span{
+    display: inline-block;
+    transform: skewY(-9deg);
+}
+
+.-sched-day{
+	overflow: hidden;
+}
+
+.-event-loc{
+	font-style: italic;
+}
+
+.-event{
+	font-weight: 500;
+}
+
+.-tab-title{
+	padding: 8px;
+	color: #333;	
+	border-bottom: 2px solid #ccc;
+}
+
+.-tab-title:hover{
+	border-color: #888;
+	
+}
+
+.-tab-title.-active{
+	color: var(--red);
+	border-color:var(--red);
+}
+
+.-max-200{
+	max-width: 400px;	
 }

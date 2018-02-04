@@ -26,5 +26,11 @@ function toggleCover(){
 	toggleActive('.-nav-bar')
 }
 
+function onSchedTabClick(){
+	const id = this.dataset.id
+	activate('.-tab-title',  id)
+	activate('.-sched-container',  id)
+}
 attach('#moreInfo', 'click', toggleCover)
 attach('.-nav-brand, .-nav-title', 'click', toggleCover)
+attach('.-tab-title', 'click', onSchedTabClick)
