@@ -234,12 +234,11 @@ main header {
 iframe{
     display: block;
     margin: 20px auto;
-    padding: 10px;
-    box-shadow: 0 5px 11.5px rgba(40, 40, 40, 0.521), 0 1.5px 5px rgba(0, 0, 0, 0.212);
-    background: #282828;
+    background: #fff;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    box-shadow: 0 5px 11.5px rgba(40, 40, 40, 0.521), 0 1.5px 5px rgba(0, 0, 0, 0.212);
 }
 
 .schedule{
@@ -411,10 +410,11 @@ iframe{
 #entities-involved li{
     float: right;
     margin: 10px;
-    filter: grayscale();
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
 }
 
 #entities-involved img{
-    height: 60px;
+    height: 100px;
     vertical-align: middle;
 }

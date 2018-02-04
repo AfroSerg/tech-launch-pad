@@ -19,12 +19,12 @@
                 <li class="nav-section logo">
                     <a class="link-item item-home">
                         <h1>
-                            <img width="80" src="img/logo-final.png" />
+                            <img width="80" src="img/tech-launch-pad-logo.png" />
                         </h1>
                     </a>
                 </li>
                 <li class="nav-section secondary">
-                    <a class="link-item item-dashboard text-color" href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform">
+                    <a class="link-item item-dashboard text-color" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform">
                         Register
                     </a>
                     <a class="link-item text-color item-info">
@@ -47,14 +47,16 @@
                             Release your inner tycoon.
                         </h1>
                         <p class="body-text">
-                            <strong>TECH LAUNCH PAD</strong> helps student entrepreneurs develop their ideas into businesses.
+                            <strong>TECH LAUNCH PAD</strong> is an initiative that aims to help student entrepreneurs develop their
+                            ideas into businesses.
                         </p>
                         <span class="body-text info-link">
                             <a class="item-info">Click here to find out more</a>
                         </span>
                         <ul>
                             <li>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform" class="utility-button">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform" target="_blank"
+                                    class="utility-button">
                                     Register
                                 </a>
                             </li>
@@ -77,20 +79,23 @@
                         <div class="container-lg">
                             <ul>
                                 <li>
-                                    <img src="./img/boolean-sandwiches.svg" />
-                                </li>
-                                <li>
-                                    <img src="./img/university-of-pretoria.svg" />
+                                    <img src="./img/dept-inf.png" />
                                 </li>
                                 <li>
                                     <img src="./img/tuksnovation.jpg" />
+                                </li>
+                                <li>
+                                    <img src="./img/gibs.png" />
+                                </li>
+                                <li>
+                                    <img src="./img/seda.png" alt="" />
                                 </li>
                             </ul>
                         </div>
                     </section>
 
                     <div class="youtube-vid">
-                        <iframe src="https://www.youtube.com/embed/uQEOszfEkz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/c-og9BPysig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
 
 
@@ -105,17 +110,25 @@
 
                     </div>
 
+                    <div class="winners-content">
+                        <h3>What do the winners of the Tech Launch Pad competition get?</h3>
+                        <p class="body-text">For starters, the teams with the most innovative, original and useful ideas will win awesome prizes
+                            (cash or otherwise - it’s a surprise) directly after being announced as winners. But even better
+                            than that is that the top 3 teams from the competition will have the amazing opportunity to work
+                            with a handpicked team of engineers to bring their idea to life. </p>
+                        <p class="body-text">After the development of their prototypes, winning teams will also receive mentorship from some of
+                            the top entrepreneurial minds in SA facilitated by TuksNovation in partnership with UP’s Graduate
+                            School of Technology Management, Gordon’s Institute of Business Science (GIBS), and the Small
+                            Enterprise Development Agency (SEDA).</p>
+                        <p class="body-text">The vision is that the winning teams will have a prototype and the necessary business skills to take
+                            their product to market.</p>
+                    </div>
+
                     <div class="participate-content">
                         <h3>Who may participate?</h3>
-                        <ul>
-                            <li>Any student registered at the University of Pretoria,</li>
-                            <li>with an original and useful idea.</li>
-                        </ul>
-
-                        <span>*no development experience is required.</span>
-                        <span>*We encourage participants to form groups that include students from different disciplines as this
-                            will enrich their final design idea.</span>
-
+                        <p>Teams of 2 to 5 made up of any students registered at the University of Pretoria. If you have an
+                            original and useful idea and you are a registered UP student, then put together a team and sign
+                            up as quickly as possible.</p>
                     </div>
 
                     <div class="process-content">
@@ -191,13 +204,24 @@
                     </h1>
                 </div>
                 <div class="utility-button-group buttons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform" class="utility-button">Register</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform" target="_blank"
+                        class="utility-button">Register</a>
                 </div>
             </div>
         </article>
     </footer>
     <script src="./js/jquery-3.0.0.min.js"></script>
     <script src="./js/site.js"></script>
+    <script src="js/cbpFWTabs.js"></script>
+    <script>
+        (function () {
+
+            [].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+                new CBPFWTabs(el);
+            });
+
+        })();
+    </script>
 </body>
 
 </html>
