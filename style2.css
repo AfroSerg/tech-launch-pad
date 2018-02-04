@@ -165,8 +165,10 @@ body{
 }
 
 .-section{
-	height: calc(100vh - var(--nav-height));
+	width: 100vw;
+	min-height: calc(100vh - var(--nav-height));
 	padding-top: var(--nav-height);
+	overflow: hidden;
 }
 
 #cover{
@@ -324,4 +326,14 @@ body{
 	color: #fff;
 	background: #2087ff;
 	border-radius: 100%;
+}
+
+#schedule{
+	background: #f7f7f7;
+}
+
+.-title-icon{
+    position: relative;
+    top: 18px;
+    width: 64px;
 }
