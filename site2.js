@@ -18,6 +18,12 @@ const deactivate = q =>
 const toggleActive = q =>
 	a(q).forEach(el => el.classList.toggle('-active'))
 
+const skrrr = q => {
+	const target = f(q)
+	const navBarHeight = 70
+	if(!target) return
+	scrollTo(0, target.offsetTop - navBarHeight)
+}
 
 function toggleCover(){
 	toggleActive('#scrollable')
@@ -30,6 +36,12 @@ function onSchedTabClick(){
 	const id = this.dataset.id
 	activate('.-tab-title',  id)
 	activate('.-sched-container',  id)
+}
+
+function onNavItemClick(){
+	const id = this.dataset.id
+	activate('.-nav-item', id)
+	skrrr('-section[data-id="' + id + '"]')
 }
 attach('#moreInfo', 'click', toggleCover)
 attach('.-nav-brand, .-nav-title', 'click', toggleCover)
