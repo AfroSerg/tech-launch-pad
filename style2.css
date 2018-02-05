@@ -15,10 +15,12 @@
 
 body{
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 *,  *:before,  *:after{
 	box-sizing: inherit;
+	font-family: inherit;
 }
 
 .-thm{
@@ -249,13 +251,13 @@ body{
 }
 
 .-text{
-	font-family: OSL;
+	/* font-family: OSL; */
 	letter-spacing: -.004em;
 	color: rgba(0,0,0,.84);
 }
 
 .-text-title{
-	font-family: OSR;
+	/* font-family: OSR; */
 	font-weight: 100;
 	line-height: 1.04;	
 	letter-spacing: -0.05em;
