@@ -40,9 +40,13 @@ function onSchedTabClick(){
 
 function onNavItemClick(){
 	const id = this.dataset.id
+	console.log('id=>', id)
 	activate('.-nav-item', id)
-	skrrr('-section[data-id="' + id + '"]')
+	skrrr('.-section[data-id="' + id + '"]')
 }
+
+
 attach('#moreInfo', 'click', toggleCover)
 attach('.-nav-brand, .-nav-title', 'click', toggleCover)
 attach('.-tab-title', 'click', onSchedTabClick)
+attach('.-nav-item', 'click', onNavItemClick)
