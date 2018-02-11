@@ -316,16 +316,35 @@ body{
 {
 	background: var(--red);
 }
+.-max-w-960{
+	width: 100%;
+	margin: auto;
+	max-width: 960px;
+}
 
 #roadmap{
 	/* backgro	und: #fcfcfc; */
 }
 .-road-block{
-	padding-bottom: 10px;
-	background: #fff;
-	/* border-radius: 4px; */
+	background: #222;
+	color: #fff;
 	overflow: hidden;
-	/* border: 1px solid #ddd; */
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+.-road-block-2{
+	background: #222;
+	color: #fff;
+	overflow: hidden;
+	height: 80px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	font-weight: 100;
 }
 
 .-bg-business{
@@ -382,59 +401,6 @@ body{
     padding: 10px;
 }
 
-.-sched-container{
-	width: 70%;
-	max-width: 640px;
-	margin: auto;
-	display: none;
-}
-
-.-sched-container.-active{
-	display: initial;
-}
-
-.-sched-container > *{
-	padding-left: 43px;
-}
-.-sched-bar{
-	width: 3px;
-	height: 150px;
-	margin-left: 20px;
-	background: var(--red);
-}
-
-.-sched-time > span{
-    display: inline-block;
-    transform: skewY(-9deg);
-}
-
-.-sched-day{
-	overflow: hidden;
-}
-
-.-event-loc{
-	font-style: italic;
-}
-
-.-event{
-	font-weight: 500;
-}
-
-.-tab-title{
-	padding: 8px;
-	color: #333;	
-	border-bottom: 2px solid #ccc;
-}
-
-.-tab-title:hover{
-	border-color: #888;
-	
-}
-
-.-tab-title.-active{
-	color: var(--red);
-	border-color:var(--red);
-}
 
 .-max-200{
 	max-width: 400px;	
