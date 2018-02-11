@@ -1,0 +1,65 @@
+
+			<div id="faq" data-id="2" class="-section ph5">
+				<div class="f2 mb5 mt3 -dark-text tracked">
+					<img class="-title-icon"
+						src="./img/question.svg" alt="">
+					Frequently Asked Questions
+				</div>
+
+				<div class="faq-content">
+					<div class="-text-title f3 pb4">
+						What do the winners of the Tech Launch Pad competition get?
+					</div>
+					<div class="-text lh-copy ">
+						For starters, the teams with the most innovative, original and useful ideas will win awesome prizes (cash or otherwise - it’s a surprise) directly after being announced as winners. But even better than that is that the top 3 teams from the competition will have the amazing opportunity to work with a handpicked team of engineers to bring their idea to life.
+						<br><br>
+						After the development of their prototypes, winning teams will also receive mentorship from some of the top entrepreneurial minds in SA facilitated by TuksNovation in partnership with UP’s Graduate School of Technology Management, Gordon’s Institute of Business Science (GIBS), and the Small Enterprise Development Agency (SEDA).
+						<br><br>
+						The vision is that the winning teams will have a prototype and the necessary business skills to take their product to market.
+					</div>
+
+					<div class="-text-title f3 pt5 pb4">
+						Who may participate?
+					</div>
+					<div class="-text lh-copy ">
+						Teams of 2 to 5 made up of any students registered at the University of Pretoria. If you have an original and useful idea and you are a registered UP student, then put together a team and sign up as quickly as possible.
+					</div>
+
+					<div class="-text-title f3 pt5 pb4">
+						When and where will it take place?
+					</div>
+					<div class="-text lh-copy ">
+						1st Round: 23 and 24 February 2018
+						<br>
+						2nd Round: 16 and 17 March 2018
+						<br>
+						Venue: To be confirmed.
+						<br>
+						We will email the teams with specific details once the participating teams have been finalised.
+					</div>
+
+					<div class="-text-title f3 pt5 pb4">
+						Who owns the intellectual property (IP) and product after the competition?
+					</div>
+					<div class="-text lh-copy ">
+						<u>You</u>, the student entrepreneur. TuksNovation and the University of Pretoria does not acquire any ownership of the IP or the product developed by any of the teams.
+						<br/><br/>
+						If software or other forms of technology was built using University of Pretoria licenses, they retain the right to request the payment of an annual licensing fee for the underlying software of the developed product.
+					</div>
+
+
+					<div class="f3 pt5 -finally">
+						<div class="-red pb2">Ready to get started? </div>
+						Click to register your group.
+						<span class="mdi mdi-arrow-right"></span>
+					</div>
+					<div id="finalRegister" class="fr -btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+					<div class="f3 pt5 w-100 tr">
+						<a href="https://twitter.com/UPTechLaunchPad" class="no-underline">
+							<span class="mdi mdi-twitter"></span>
+							Follow us on twitter.
+						</a>
+					</div>
+				</div>
+
+			</div>
