@@ -370,7 +370,7 @@
 	<!-- part b, mobile. Don't do it like I do. It's not safe. Never the less here we are xD -->
 	<div class="dn-l">
 		<!-- BEGIN mob-cover -->
-		<div id="mob-cover" class="fixed absolute--fill dn">
+		<div id="mob-cover" class="fixed absolute--fill -active">
 			<div class="-overlay-04"></div>
 			<div class="absolute absolute--fill z-1 tc">
 				<div class="f2 white fw1 mt3 pv2 -text-shadow">Tech Launch Pad</div>
@@ -600,7 +600,7 @@
 			</div>
 			<!-- END mobile schedule -->
 		</div>
-		<div id="mob-faq" class="-mob-view absolute h-100 ph2 bg-near-white dn">
+		<div id="mob-faq" class="-mob-view absolute h-100 ph2 bg-near-white">
 			<div class="f4 tc mb5 mt3">Frequently Asked Questions</div>
 			<div id="mini-accordion" class="mb5">
 				<h3>
@@ -685,6 +685,14 @@
 			</div>
 		</div>
 		<!-- END info view -->
+
+		<div class="fixed -mob-menu bg-white f3 tc fw1 pv5" >
+			<div id="mobNavHome" class="-mob-menu-opt mv4">Home</div>
+			<div id="mobNavInfo" class="-mob-menu-opt mv4 -active">Info</div>
+			<div id="mobNavFAQ" class="-mob-menu-opt mv4 ">FAQ</div>
+
+			<div class="f5 -btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+		</div>
 	</div>
 	<script src="./js/site.js"></script>
 	<script>

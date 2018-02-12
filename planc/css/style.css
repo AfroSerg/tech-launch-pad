@@ -528,6 +528,7 @@ body{
 
 
 .-mob-nav-bar{
+	display: none;
 	position: fixed;
 	top:0;
 	left: 0;
@@ -538,6 +539,9 @@ body{
 	background: #fff;
 }
 
+.-mob-nav-bar.-active{
+	display: initial;
+}
 
 .-mob-yt-block{
 	background: black;
@@ -550,8 +554,13 @@ body{
 }
 
 .-mob-view{
+	display: none;
 	overflow-x: hidden;
 	padding-top: var(--nav-height);
+}
+
+.-mob-view.-active{
+	display: initial;
 }
 
 #mob-info{
@@ -663,6 +672,17 @@ body{
     top: 18px;
 	width: 64px;
 	margin-right: 10px;
+}
+
+.-mob-menu{
+	display: none;
+	top: var(--nav-height);
+	width: 100vw;
+	height: calc(100vh -  var(--nav-height));
+}
+
+.-mob-menu.-active{
+	display: initial;
 }
 
 /*phones*/

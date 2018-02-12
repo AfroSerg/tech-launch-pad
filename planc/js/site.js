@@ -61,4 +61,39 @@ attach('#navHome', 'click', () =>{
 	deactivate('.-nav-bar')
 })
 
+
+attach('#mobMoreInfoBtn', 'click', () => {
+	deactivate('#mob-cover')
+	deactivate('.-mob-view')
+	activate('.-mob-nav-bar')
+	activate('#mob-info')
+})
+
+attach('.-stacks', 'click', () => {
+	toggleActive('.-stack')
+	toggleActive('.-mob-menu')
+})
+
+attach('#mobNavHome', 'click', () => {
+	f('.-stacks').click()
+	activate('#mob-cover')
+	deactivate('.-mob-view')
+	deactivate('.-mob-nav-bar')
+})
+
+attach('#mobNavInfo', 'click', () => {
+	f('.-stacks').click()
+	deactivate('.-mob-view')
+	deactivate('#mob-cover')
+	// activate('.-mob-nav-bar')
+	activate('#mob-info')
+})
+
+attach('#mobNavFAQ', 'click', () => {
+	f('.-stacks').click()
+	deactivate('.-mob-view')
+	deactivate('#mob-cover')
+	// activate('.-mob-nav-bar')
+	activate('#mob-faq')
+})
 // attach('.-nav-item', 'click', onNavItemClick)
