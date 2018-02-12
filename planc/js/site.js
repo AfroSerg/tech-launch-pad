@@ -42,7 +42,11 @@ function onNavItemClick(){
 
 
 attach('#moreInfo', 'click', toggleCover)
-attach('.-nav-brand, .-nav-title', 'click', toggleCover)
+attach('.-nav-brand, .-nav-title', 'click', () => {
+	deactivate('.-view')
+	deactivate('#cover')
+	deactivate('.-nav-bar')
+})
 attach('#navFAQ', 'click', () =>{
 	deactivate('.-view')
 	activate('#faq-view')
