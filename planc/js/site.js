@@ -97,3 +97,7 @@ attach('#mobNavFAQ', 'click', () => {
 	activate('#mob-faq')
 })
 // attach('.-nav-item', 'click', onNavItemClick)
+
+attach('.-btn-register', 'click', () => {
+	window.location.href  = 'https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform?usp=sf_link'
+})
