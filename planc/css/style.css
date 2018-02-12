@@ -550,8 +550,12 @@ body{
 }
 
 .-mob-view{
-	width: 100vw;
+	overflow-x: hidden;
 	padding-top: var(--nav-height);
+}
+
+#mob-info{
+	/* background: red !important; */
 }
 
 .-stacks{
@@ -609,7 +613,9 @@ body{
 	width: 10px;
     height: 2100px;
     background: #222;
-    margin: auto;
+	margin: auto;
+	position: relative;
+	left:  20px;
 }
 
 .-mob-point{
@@ -626,7 +632,7 @@ body{
     position: relative;
     top: -28px;
     width: 180px;
-    left: 50px;
+    left: 30px;
 }
 
 
@@ -636,7 +642,7 @@ body{
     /* background: green; */
     width: 180px;
     height: 64px;
-    margin-left: -180px;
+    margin-left: -170px;
     top: -50px;
     padding-right: 30px;
     margin-bottom: 38px;
@@ -649,7 +655,7 @@ body{
     height: 30px;
     background: #222;
     border-radius: 100%;
-    right: -20px;
+    right: -10px;
     top: -3px;
 }
 .-mob-title-icon{
