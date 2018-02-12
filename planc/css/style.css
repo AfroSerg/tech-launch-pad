@@ -554,6 +554,7 @@ body{
 }
 
 .-mob-view{
+	width: 100vw;
 	display: none;
 	overflow-x: hidden;
 	padding-top: var(--nav-height);
