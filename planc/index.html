@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tech Launch Pad: Propelling Student Entreprenuership</title>
+
+	<link rel="stylesheet" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" href="./css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="./css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="./css/tachyons.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="./js/jquery-3.0.0.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<style>
+		html{
+			/* font-family: sans-serif; */
+		}
+
+	</style>
+</head>
+<body class="-thm">
+
+	<!-- whaaa? is that a comment? In the html? Why I'd never... -->
+	<!-- part a -->
+	<div class="dn db-l">
+		<!-- BEGIN cover -->
+		<div id="cover" class="-active">
+			<div class="absolute absolute--fill">
+				<div class="absolute top-0 z-1 tc w-100 f1 fw1">
+					<img class="-cover-logo relative"
+						width="52"
+						src="./img/logo-final.png" alt="">
+					<span class="-cover-title relative"><span  class="white">TECH LA</span>UNCH PAD</span>
+				</div>
+				<div class="-col-50 -bg -bg-1 h-100 relative white tc">
+					<div class="-overlay-04"></div>
+					<div class="absolute bottom-1 tc w-100">
+						<div class="f2 -text-shadow mb4">Release your inner tycoon.</div>
+						<div class="-btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+					</div>
+				</div>
+				<div class="-col-50 h-100 ph5 pt4">
+					<div class="-yt-block">
+						<iframe src="https://www.youtube.com/embed/c-og9BPysig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="-le-partners pt4 tc">
+						<img class="mh2" width="32"
+							src="./img/up-badge.png" alt="">
+						<img class="mh2" width="48"
+							src="./img/dept-inf.png" alt="">
+						<img class="mh2" width="48"
+							src="./img/tuksnovation.jpg" alt="">
+						<img class="mh2" width="64"
+							src="./img/seda.png" alt="">
+					</div>
+					<p class="lh-copy f5 pt3-l pt2-ns w-100 fw3 near-black tl -dark-text">
+						Tech Launch Pad is an initiative created for students entreprenuers walking around with ideas that they can only dream about selling.
+						We aim to equip student entreprenuers with financial and technical support, as well as guidance towards developing a proof of concept and a proper business plan for their ideas.
+					</p>
+					<div class="-bar"></div>
+					<div id="moreInfo" class="absolute bottom-2 hover-blue pointer">
+						How It Works
+						<span class="mdi mdi-arrow-right"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END cover -->
+
+		<!-- BEGIN navbar -->
+		<div class="-nav-bar z-3">
+			<img class="-nav-brand"
+				width="32" 
+				src="./img/logo-final.png" alt="">
+			<div class="-nav-title pointer dib f4">TECH LAUNCH PAD</div>
+			<div class="-nav-opts dib fr f5 mr4">
+				<span id="navHome" class="-nav-opt -nav-item hover-blue">Home</span>
+				<span id="navInfo" class="-nav-opt -nav-item hover-blue -active">Info</span>
+				<span id="navFAQ" class="-nav-opt -nav-item hover-blue">FAQ</span>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeJjdROXqekS5ZNhXtr4piht4i9pgHcPfPvQybIRYI5igTj7A/viewform" 
+					class="-nav-opt -nav-item -nav-register hover-bg-black hover-white no-underline">Register</a>
+			</div>	
+		</div>
+		<!-- END navbar -->
+
+		<!-- BEGIN info-view -->
+		<div id="info-view" data-id="0" class="z-2 absolute absolute--fill bg-white -view">
+			<!-- How it works -->
+			<div id="roadmap" data-id="0" class="-section ph5 bg-near-white">
+				<div class="f2 mb5 mt3 -dark-text tracked">
+					<img class="-title-icon"
+						src="./img/gps.svg" alt="">
+					How It Works
+				</div>
+	
+				<div id="procedure" class="-max-w-960 -active pb5">
+					<!-- discover entrepreneurs -->
+					<div class="-col-33 ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 mb3">
+							Discover Entrepreneurs
+						</div>
+						<div class="-text-title  pv3">
+							Round 1: Conceptual Design
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block-2">
+							100 UP students<br/>
+							(20 - 25 groups)
+						</div>
+						<div class="-road-block">
+							"Bag of Stuff"
+						</div>
+						<div class="-road-block">
+							10 Groups
+						</div>
+						<div class="-text-title  pv3">
+							Round 2: Business Proposal
+						</div>
+						<div class="-road-block-2">
+							3 Groups<br/>
+							Prototype Dev and Business Plan
+						</div>
+					</div>
+	
+					<!-- develop prototypes -->
+					<div class="-col-33 ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 mb3">
+							Develop Prototypes
+						</div>
+	
+						<div class="-text-title pv3 near-white">
+							boolean  sandwiches
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block-2">
+							PM from IDL Project Plan<br/>
+							(phases, milestones, deliverables)
+						</div>
+						<div class="-road-block-2">
+							3 Prototype Dev teams<br/>
+							(4 techies/group)
+						</div>
+						<div class="-road-block">
+							Successful prototypes
+						</div>
+					</div>
+		
+					<!-- business incubation -->
+					<div class="-col-33 ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 mb3">
+							Business Incubation
+						</div>
+	
+						<div class="-text-title pv3 near-white">
+							boolean  sandwiches
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block">
+							Mentors - MBA students
+						</div>
+						<div class="-road-block">
+							Bootcamps - UP/GIBS
+						</div>
+						<div class="-road-block-2">
+							Acquisition of further funding<br/>
+							if required
+						</div>
+						<div class="-road-block">
+							Take product to market
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End How it works -->
+
+			<!-- Begin Prizes -->
+			<!-- <div id="prizes" data-id="1" class="-section ph5 bg-white">
+				<div class="f2 mb5 mt3 -dark-text tracked">
+					<img class="-title-icon"
+						src="./img/gps2.svg" alt="">
+					Prizes
+				</div>
+			</div> -->
+			<!-- End Prizes -->
+
+			<!-- Begin Schedule -->
+			<div id="schedule" data-id="2" class="-section ph5">
+				<div class="f2 mb5 mt3 -dark-text tracked">
+					<img class="-title-icon"
+						src="./img/sched2.svg" alt="">
+					Schedule
+				</div>			
+				
+				<div class="-sched"></div>
+					<div class="-time-line">
+
+						<!-- feb -->
+						<div class="-point"></div>
+						<div class="-time-title f2">
+							Feb
+						</div>
+						<div class="-time-event f3">
+							Team applications
+						</div>
+						<div class="-time-event f3">
+							1st Round of competition
+						</div>
+
+						<!-- march -->
+						<div class="-point"></div>
+						<div class="-time-title f2">
+							Mar
+						</div>
+						<div class="-time-event f3">
+							2nd Round of competition
+						</div>
+						<div class="-time-event f3">
+							Winners announced
+						</div>
+						<div class="-time-event f3">
+							Agreements signed
+						</div>
+						
+						<!-- april  to oct -->
+						<div class="-point"></div>
+						<div class="-time-title f2">
+							Apr - Oct
+						</div>
+						<div class="-time-event f3">
+							Development of solution
+						</div>
+						<div class="-time-event f3">
+							Business incubation
+						</div>
+
+						<!-- nov - dec -->
+						<div class="-point"></div>
+						<div class="-time-title f2">
+							Nov - Dec
+						</div>
+						<div class="-time-event f3">
+							Demo of solution
+						</div>
+
+						<!-- jan - apr -->
+						<div class="-point"></div>
+						<div class="-time-title f2">
+							Jan - Apr
+						</div>
+						<div class="-time-event f3">
+							Attend business launch bootcamp
+						</div>
+						<div class="-time-event f3">
+							Pitch to investors &amp; commercialise
+						</div>
+
+					</div>
+				</div>
+
+				<div class="bg-white pa3 tc">
+					<span class="f3 mr3">Ready to register?</span>
+					<div class="-btnRegister -btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+				</div>
+			</div>
+			<!-- End Schedule -->
+
+
+			<!-- BEGIN register -->
+			<div id="register" class="-section ph5 bg-white">
+			</div>
+			<!-- End register -->
+		</div>
+		<!-- END info-view -->
+
+
+		<!-- BEGIN faq-view -->
+		<div id="faq-view" data-id="1" class="z-2 absolute bg-white -view ph5 pv3">
+			<div class="f2 tracked mb5 mt5">Frequently Asked Questions</div>
+			<div id="accordion">
+				<h3>
+					What do the winners of the Tech Launch Pad competition get?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						For starters, the teams with the most innovative, original and useful ideas will win awesome prizes (cash or otherwise - it’s a surprise) directly after being announced as winners. But even better than that is that the top 3 teams from the competition will have the amazing opportunity to work with a handpicked team of engineers to bring their idea to life.
+						<br><br>
+						After the development of their prototypes, winning teams will also receive mentorship from some of the top entrepreneurial minds in SA facilitated by TuksNovation in partnership with UP’s Graduate School of Technology Management, Gordon’s Institute of Business Science (GIBS), and the Small Enterprise Development Agency (SEDA).
+						<br><br>
+						The vision is that the winning teams will have a prototype and the necessary business skills to take their product to market.	
+					</p>
+				</div>
+
+				<h3>
+					Who may participate?					
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						Teams of 2 to 5 made up of any students registered at the University of Pretoria. If you have an original and useful idea and you are a registered UP student, then put together a team and sign up as quickly as possible.
+					</p>
+				</div>
+
+				<h3>
+					Do participants need any programming experience?					
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						No software development experience is required. We encourage participants to form teams that include students from different disciplines as this will enrich their final design idea.
+					</p>
+				</div>
+
+				<h3>
+					How will it work?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+							Teams of 2 to 4 University of Pretoria students will sign up for the Tech Launch Pad competition. The competition will consist of two rounds.
+							<br/><br/>
+							In Round 1, teams will develop and refine their ideas through a participatory design session (don’t worry if you don’t know what that is, we will show you). Thereafter, each group will present their idea by way of showing their designs accompanied by a slideshow to a panel of carefully selected and highly respected judges. The top 10 teams will move on to Round 2.
+							<br/><br/>
+							In Round 2, the 10 best teams will receive valuable entrepreneurship training through an online Entreprneursip Bootcamp. After the training, the teams will be expected to put together a commercialisation strategy and business plan built upon the idea they presented in round 1. These will again be evaluated by expert judges who will select the top 3 teams
+					</p>
+				</div>
+
+				<h3>
+					When and where will it take place?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						1st Round: 23 and 24 February 2018
+						<br>
+						2nd Round: 16 and 17 March 2018
+						<br>
+						Venue: To be confirmed.
+						<br>
+						We will email the teams with specific details once the participating teams have been finalised.
+							
+					</p>
+				</div>
+
+				<h3>
+					Who owns the intellectual property (IP) and product after the competition?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						<u>You</u>, the student entrepreneur. TuksNovation and the University of Pretoria does not acquire any ownership of the IP or the product developed by any of the teams.
+						<br/><br/>
+						If software or other forms of technology was built using University of Pretoria licenses, they retain the right to request the payment of an annual licensing fee for the underlying software of the developed product.						
+					</p>
+				</div>
+
+				<h3>
+					What is the registration deadline?
+				</h3>
+				<div>
+					<p class="lh-copy -text"> 
+							Registrations close at <b>23h59 on 20 February 2018</b>.
+					</p>
+				</div>				
+			</div>
+		</div>
+		<!-- END faq-view -->
+	</div>
+
+	<!-- part b, mobile. Don't do it like I do. It's not safe. Never the less here we are xD -->
+	<div class="dn-l">
+		<!-- BEGIN mob-cover -->
+		<div id="mob-cover" class="fixed absolute--fill dn">
+			<div class="-overlay-04"></div>
+			<div class="absolute absolute--fill z-1 tc">
+				<div class="f2 white fw1 mt3 pv2 -text-shadow">Tech Launch Pad</div>
+				<img
+					width="128" 
+					src="./img/logo-final.png" alt="">
+
+				<div class="absolute tc bottom-0 w-100 pb5">
+					<div class="white f4 -text-shadow mb4">Release your inner tycoon.</div>
+					<div id="mobRegisterBtn" class="-mob-btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+					<div id="mobMoreInfoBtn" class="-mob-btn b--solid b--white white -hover-b-red-highlight -hover-bg-red-highlight">More Info</div>
+				</div>
+			</div>
+		</div>
+		<!-- END mob-cover -->
+
+
+		<!-- BEGIN info view -->
+		<div id="mob-info" class="-mob-view absolute dn">
+			<div class="-mob-yt-block mb3">
+				<iframe src="https://www.youtube.com/embed/c-og9BPysig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="-mob-partners tc">
+				<img class="mh2" width="32"
+					src="./img/up-badge.png" alt="">
+				<img class="mh2" width="48"
+					src="./img/dept-inf.png" alt="">
+				<img class="mh2" width="48"
+					src="./img/tuksnovation.jpg" alt="">
+				<img class="mh2" width="64"
+					src="./img/seda.png" alt="">
+			</div>
+
+
+			<p class="lh-copy f5 ph3 w-100 fw3 near-black tl -dark-text">
+				Tech Launch Pad is an initiative created for students entreprenuers walking around with ideas that they can only dream about selling.
+				We aim to equip student entreprenuers with financial and technical support, as well as guidance towards developing a proof of concept and a proper business plan for their ideas.
+			</p>
+			<div class="-bar ml3 mb4"></div>
+
+			<!-- BEGIN mobile roadmap -->
+			<div id="mob-roadmap" class="bg-near-white">
+				<div class="f2 mb5 mt3 -dark-text tracked tc">
+					<img class="-title-icon"
+						src="./img/gps.svg" alt=""><br/><br/>
+					How It Works
+				</div>
+	
+				<div class=" -active pb5">
+					<!-- discover entrepreneurs -->
+					<div class="ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 mb3">
+							Discover Entrepreneurs
+						</div>
+						<div class="-text-title  pv3">
+							Round 1: Conceptual Design
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block-2">
+							100 UP students<br/>
+							(20 - 25 groups)
+						</div>
+						<div class="-road-block">
+							"Bag of Stuff"
+						</div>
+						<div class="-road-block">
+							10 Groups
+						</div>
+						<div class="-text-title  pv3">
+							Round 2: Business Proposal
+						</div>
+						<div class="-road-block-2">
+							3 Groups<br/>
+							Prototype Dev and Business Plan
+						</div>
+					</div>
+	
+					<!-- develop prototypes -->
+					<div class="ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 pt5">
+							Develop Prototypes
+						</div>
+	
+						<div class="-text-title pv3 near-white">
+							boolean  sandwiches
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block-2">
+							PM from IDL Project Plan<br/>
+							(phases, milestones, deliverables)
+						</div>
+						<div class="-road-block-2">
+							3 Prototype Dev teams<br/>
+							(4 techies/group)
+						</div>
+						<div class="-road-block">
+							Successful prototypes
+						</div>
+					</div>
+		
+					<!-- business incubation -->
+					<div class="ph4 -trans-02-05 -fade-out">
+						<div class="-roadmap-title -text-title f3 fw6 pt5">
+							Business Incubation
+						</div>
+	
+						<div class="-text-title pv3 near-white">
+							boolean  sandwiches
+						</div>
+	
+						<!-- process blocks -->
+						<div class="-road-block">
+							Mentors - MBA students
+						</div>
+						<div class="-road-block">
+							Bootcamps - UP/GIBS
+						</div>
+						<div class="-road-block-2">
+							Acquisition of further funding<br/>
+							if required
+						</div>
+						<div class="-road-block">
+							Take product to market
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END How it works -->
+
+			<!-- BEGIN mobile prizes -->
+			<!-- <div id="mob-prizes"></div> -->
+			<!-- END mobile prizes -->
+
+			<!-- BEGIN mobile schedule -->
+			<div id="mob-schedule">
+				<div class="f2 mb5 mt3 -dark-text tracked">
+						<img class="-title-icon"
+							src="./img/sched2.svg" alt="">
+						Schedule
+					</div>			
+					
+					<div class="-sched"></div>
+						<div class="-mob-time-line">
+	
+							<!-- feb -->
+							<div class="-mob-point"></div>
+							<div class="-mob-time-title f3">
+								Feb
+							</div>
+							<div class="-mob-time-event f4">
+								Team applications
+							</div>
+							<div class="-mob-time-event f4">
+								1st Round of competition
+							</div>
+	
+							<!-- march -->
+							<div class="-mob-point"></div>
+							<div class="-mob-time-title f3">
+								Mar
+							</div>
+							<div class="-mob-time-event f4">
+								2nd Round of competition
+							</div>
+							<div class="-mob-time-event f4">
+								Winners announced
+							</div>
+							<div class="-mob-time-event f4">
+								Agreements signed
+							</div>
+							
+							<!-- april  to oct -->
+							<div class="-mob-point"></div>
+							<div class="-mob-time-title f3">
+								Apr - Oct
+							</div>
+							<div class="-mob-time-event f4">
+								Development of solution
+							</div>
+							<div class="-mob-time-event f4">
+								Business incubation
+							</div>
+	
+							<!-- nov - dec -->
+							<div class="-mob-point"></div>
+							<div class="-mob-time-title f3">
+								Nov - Dec
+							</div>
+							<div class="-mob-time-event f4">
+								Demo of solution
+							</div>
+	
+							<!-- jan - apr -->
+							<div class="-mob-point"></div>
+							<div class="-mob-time-title f2">
+								Jan - Apr
+							</div>
+							<div class="-mob-time-event f4">
+								Attend business launch bootcamp
+							</div>
+							<div class="-mob-time-event f4">
+								Pitch to investors &amp; commercialise
+							</div>
+	
+						</div>
+					</div>
+	
+					<div class="bg-white pa3 tc">
+						<span class="f3 mr3">Ready to register?</span>
+						<div class="-btnRegister -btn -bg-red white -b-red -hover-b-red-highlight -hover-bg-red-highlight">Register</div>
+					</div>				
+			</div>
+			<!-- END mobile schedule -->
+		</div>
+		<div id="mob-faq" class="-mob-view fixed h-100 ph2 dn">
+			<div class="f4 tc mb5 mt3">Frequently Asked Questions</div>
+			<div id="mini-accordion" class="mb5">
+				<h3>
+					What do the winners of the Tech Launch Pad competition get?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						For starters, the teams with the most innovative, original and useful ideas will win awesome prizes (cash or otherwise - it’s a surprise) directly after being announced as winners. But even better than that is that the top 3 teams from the competition will have the amazing opportunity to work with a handpicked team of engineers to bring their idea to life.
+						<br><br>
+						After the development of their prototypes, winning teams will also receive mentorship from some of the top entrepreneurial minds in SA facilitated by TuksNovation in partnership with UP’s Graduate School of Technology Management, Gordon’s Institute of Business Science (GIBS), and the Small Enterprise Development Agency (SEDA).
+						<br><br>
+						The vision is that the winning teams will have a prototype and the necessary business skills to take their product to market.	
+					</p>
+				</div>
+
+				<h3>
+					Who may participate?					
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						Teams of 2 to 5 made up of any students registered at the University of Pretoria. If you have an original and useful idea and you are a registered UP student, then put together a team and sign up as quickly as possible.
+					</p>
+				</div>
+
+				<h3>
+					Do participants need any programming experience?					
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						No software development experience is required. We encourage participants to form teams that include students from different disciplines as this will enrich their final design idea.
+					</p>
+				</div>
+
+				<h3>
+					How will it work?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+							Teams of 2 to 4 University of Pretoria students will sign up for the Tech Launch Pad competition. The competition will consist of two rounds.
+							<br/><br/>
+							In Round 1, teams will develop and refine their ideas through a participatory design session (don’t worry if you don’t know what that is, we will show you). Thereafter, each group will present their idea by way of showing their designs accompanied by a slideshow to a panel of carefully selected and highly respected judges. The top 10 teams will move on to Round 2.
+							<br/><br/>
+							In Round 2, the 10 best teams will receive valuable entrepreneurship training through an online Entreprneursip Bootcamp. After the training, the teams will be expected to put together a commercialisation strategy and business plan built upon the idea they presented in round 1. These will again be evaluated by expert judges who will select the top 3 teams
+					</p>
+				</div>
+
+				<h3>
+					When and where will it take place?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						1st Round: 23 and 24 February 2018
+						<br>
+						2nd Round: 16 and 17 March 2018
+						<br>
+						Venue: To be confirmed.
+						<br>
+						We will email the teams with specific details once the participating teams have been finalised.
+							
+					</p>
+				</div>
+
+				<h3>
+					Who owns the intellectual property (IP) and product after the competition?
+				</h3>
+				<div>
+					<p class="lh-copy -text">
+						<u>You</u>, the student entrepreneur. TuksNovation and the University of Pretoria does not acquire any ownership of the IP or the product developed by any of the teams.
+						<br/><br/>
+						If software or other forms of technology was built using University of Pretoria licenses, they retain the right to request the payment of an annual licensing fee for the underlying software of the developed product.						
+					</p>
+				</div>
+
+				<h3>
+					What is the registration deadline?
+				</h3>
+				<div>
+					<p class="lh-copy -text"> 
+							Registrations close at <b>23h59 on 20 February 2018</b>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- END info view -->
+	</div>
+	<script src="./js/site.js"></script>
+	<script>
+		// slide in babel for compatibility... dirty but what
+		// can you do.
+
+
+		$( "#accordion" ).accordion({
+			animate: 200,
+			active: false,
+			collapsible: true  
+		});
+		$( "#mini-accordion" ).accordion({
+			animate: false,
+			active: false,
+			collapsible: true   
+		});
+	</script>
+</body>
+</html>

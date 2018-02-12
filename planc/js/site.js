@@ -26,16 +26,11 @@ const skrrr = q => {
 }
 
 function toggleCover(){
-	toggleActive('#scrollable')
+	deactivate('.-nav-item')
+	toggleActive('#info-view')
 	toggleActive('#cover')
-	toggleActive('#roadmap')
 	toggleActive('.-nav-bar')
-}
-
-function onSchedTabClick(){
-	const id = this.dataset.id
-	activate('.-tab-title',  id)
-	activate('.-sched-container',  id)
+	activate('#navInfo')
 }
 
 function onNavItemClick(){
@@ -48,5 +43,22 @@ function onNavItemClick(){
 
 attach('#moreInfo', 'click', toggleCover)
 attach('.-nav-brand, .-nav-title', 'click', toggleCover)
-attach('.-tab-title', 'click', onSchedTabClick)
-attach('.-nav-item', 'click', onNavItemClick)
+attach('#navFAQ', 'click', () =>{
+	deactivate('.-view')
+	activate('#faq-view')
+	deactivate('.-nav-item')
+	activate('#navFAQ')
+})
+attach('#navInfo', 'click', () =>{
+	deactivate('.-view')
+	activate('#info-view')
+	deactivate('.-nav-item')
+	activate('#navInfo')
+})
+attach('#navHome', 'click', () =>{
+	deactivate('.-view')
+	deactivate('#cover')
+	deactivate('.-nav-bar')
+})
+
+// attach('.-nav-item', 'click', onNavItemClick)
